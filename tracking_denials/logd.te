@@ -1,3 +1,0 @@
-# b/261105354
-dontaudit logd trusty_log_device:chr_file { open };
-dontaudit logd trusty_log_device:chr_file { read };

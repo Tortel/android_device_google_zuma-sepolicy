@@ -23,6 +23,8 @@
 /vendor/bin/trusty_metricsd                                                 u:object_r:trusty_metricsd_exec:s0
 /vendor/bin/chre                                                            u:object_r:chre_exec:s0
 /vendor/bin/init\.uwb\.calib\.sh                                            u:object_r:vendor_uwb_init_exec:s0
+/vendor/bin/hw/android\.hardware\.security\.keymint-service\.trusty         u:object_r:hal_keymint_default_exec:s0
+/vendor/bin/hw/android\.hardware\.security\.keymint-service\.rust\.trusty         u:object_r:hal_keymint_default_exec:s0
 
 # Vendor Firmwares
 /vendor/firmware(/.*)?                                                      u:object_r:vendor_fw_file:s0
@@ -136,6 +138,15 @@
 /dev/lwis-votf                                                              u:object_r:lwis_device:s0
 /dev/st54spi                                                                u:object_r:st54spi_device:s0
 /dev/trusty-ipc-dev0                                                        u:object_r:tee_device:s0
+/dev/dma_heap/sensor_direct_heap                                            u:object_r:sensor_direct_heap_device:s0
+/dev/dma_heap/faceauth_tpu-secure                                           u:object_r:faceauth_heap_device:s0
+/dev/dma_heap/faimg-secure                                                  u:object_r:faceauth_heap_device:s0
+/dev/dma_heap/famodel-secure                                                u:object_r:faceauth_heap_device:s0
+/dev/dma_heap/faprev-secure                                                 u:object_r:faceauth_heap_device:s0
+/dev/dma_heap/farawimg-secure                                               u:object_r:faceauth_heap_device:s0
+/dev/dma_heap/vframe-secure                                                 u:object_r:video_secure_heap_device:s0
+/dev/dma_heap/vscaler-secure                                                u:object_r:video_secure_heap_device:s0
+/dev/dma_heap/vstream-secure                                                u:object_r:video_secure_heap_device:s0
 
 # Data
 /data/vendor/camera(/.*)?                                                   u:object_r:vendor_camera_data_file:s0

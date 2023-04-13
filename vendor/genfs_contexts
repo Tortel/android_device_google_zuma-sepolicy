@@ -26,7 +26,6 @@ genfscon debugfs /google_battery                                        u:object
 genfscon debugfs /pm_genpd/pm_genpd_summary                             u:object_r:vendor_pm_genpd_debugfs:s0
 genfscon debugfs /usb                                                   u:object_r:vendor_usb_debugfs:s0
 genfscon debugfs /maxfg                                                 u:object_r:vendor_maxfg_debugfs:s0
-genfscon debugfs /cma                                                   u:object_r:vendor_cma_debugfs:s0
 
 # Extcon
 genfscon sysfs /devices/platform/10cb0000.hsi2c/i2c-0/0-0025/extcon/extcon0   u:object_r:sysfs_extcon:s0
@@ -415,6 +414,7 @@ genfscon sysfs /devices/platform/google,usbc_port_cooling_dev/wakeup            
 genfscon sysfs /devices/platform/gpio_keys/wakeup                                                                         u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/sound-aoc/wakeup                                                                         u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/wakeup/wakeup                                                                             u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/odm/odm:btbcm/wakeup                                                                     u:object_r:sysfs_wakeup:s0
 
 # Trusty
 genfscon sysfs /module/trusty_virtio/parameters/use_high_wq               u:object_r:sysfs_trusty:s0

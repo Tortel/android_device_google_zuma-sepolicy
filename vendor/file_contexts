@@ -12,6 +12,7 @@
 /vendor/bin/hw/android\.hardware\.secure_element-service.uicc               u:object_r:hal_secure_element_uicc_exec:s0
 /vendor/bin/hw/android\.hardware\.qorvo\.uwb\.service                       u:object_r:hal_uwb_vendor_default_exec:s0
 /vendor/bin/hw/android\.hardware\.composer\.hwc3-service\.pixel             u:object_r:hal_graphics_composer_default_exec:s0
+/vendor/bin/hw/android\.hardware\.contexthub-service\.generic               u:object_r:hal_contexthub_default_exec:s0
 /vendor/bin/hw/google\.hardware\.media\.c2@2\.0-service                     u:object_r:mediacodec_google_exec:s0
 /vendor/bin/dump/dump_wlan\.sh                                              u:object_r:dump_wlan_exec:s0
 /vendor/bin/dump/dump_cma\.sh                                               u:object_r:dump_cma_exec:s0
@@ -34,6 +35,8 @@
 # Vendor libraries
 /vendor/lib(64)?/libgxp\.so                                                 u:object_r:same_process_hal_file:s0
 
+# Vendor
+/data/vendor/bluetooth(/.*)?                                                u:object_r:vendor_bt_data_file:s0
 
 # persist
 /mnt/vendor/persist/camera(/.*)?                                            u:object_r:persist_camera_file:s0
@@ -161,6 +164,7 @@
 /dev/dma_heap/famodel-secure                                                u:object_r:faceauth_heap_device:s0
 /dev/dma_heap/faprev-secure                                                 u:object_r:faceauth_heap_device:s0
 /dev/dma_heap/farawimg-secure                                               u:object_r:faceauth_heap_device:s0
+/dev/dma_heap/framebuffer-secure                                            u:object_r:video_secure_heap_device:s0
 /dev/dma_heap/vframe-secure                                                 u:object_r:video_secure_heap_device:s0
 /dev/dma_heap/vscaler-secure                                                u:object_r:video_secure_heap_device:s0
 /dev/dma_heap/vstream-secure                                                u:object_r:dmabuf_system_secure_heap_device:s0

@@ -20,3 +20,4 @@ get_prop(systemui_app, keyguard_config_prop)
 set_prop(systemui_app, bootanim_system_prop)
 get_prop(systemui_app, qemu_hw_prop)
 
+allow systemui_app lineage_globalactions_service:service_manager find;
